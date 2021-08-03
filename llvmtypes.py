@@ -17,7 +17,13 @@ void_void = ir.VoidType() # Return type for methods
 
 # Arrays
 def InitializeArray(valtype, size):
+	"""
+	Initialize an Array.
+	"""
 	return ir.ArrayType(valtype, size)
 
 def InitializeList(valtype, start_size):
+	"""
+	Initialize a Vector. (Dynamic Array)
+	"""
 	return ir.VectorType(valtype, start_size)
